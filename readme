@@ -1,0 +1,57 @@
+task-manager-app/
+│
+├── backend/
+│   ├── controllers/
+│   │   └── taskController.js
+│   ├── models/
+│   │   └── Task.js
+│   ├── routes/
+│   │   └── taskRoutes.js
+│   ├── app.js
+│   └── package.json
+│
+└── frontend/
+    ├── public/
+    │   └── index.html
+    ├── src/
+    │   ├── components/
+    │   │   ├── TaskList.js
+    │   │   ├── TaskItem.js
+    │   │   ├── AddTaskForm.js
+    │   │   └── EditTaskForm.js
+    │   ├── App.js
+    │   ├── index.js
+    │   └── index.css
+    └── package.json
+
+
+
+Backend:
+
+controllers: Contains the logic to handle requests and responses.
+models: Contains the MongoDB schema definition for tasks.
+routes: Contains the route definitions for CRUD operations.
+app.js: Main entry point for the Node.js backend.
+package.json: Contains metadata about the project and its dependencies.
+Frontend:
+
+public: Contains the HTML file which serves as the entry point for the React application.
+src/components: Contains React components for displaying tasks, adding tasks, and editing tasks.
+src/App.js: Main component where other components are imported and rendered.
+src/index.js: Entry point for the React application.
+src/index.css: CSS file for styling the application.
+package.json: Contains metadata about the project and its dependencies.
+Now, for the functionalities:
+
+Backend:
+
+Set up a Node.js server using Express.
+Define routes for CRUD operations (GET, POST, PUT, DELETE) on tasks.
+Implement controllers to handle the logic for each route, interacting with MongoDB using Mongoose.
+Frontend:
+
+Create components for displaying tasks, adding tasks, and editing tasks.
+Use React state to manage the task data and form inputs.
+Implement CRUD operations by making HTTP requests to the backend API using Axios or Fetch API.
+
+
